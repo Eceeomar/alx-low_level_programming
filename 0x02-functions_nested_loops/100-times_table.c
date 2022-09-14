@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * print_times_table - Prints a multiplication table up to param
- * @n: The number to be treated
- *
- * Return: Number matrix
+ * main - check the code for Holberton School students
+ * 
+ * Return: Always 0.
  */
-void print_times_table(int n)
+int main(void)
+{
+print_times_table(13);
 {
 int x, y, z;
 
@@ -47,6 +48,7 @@ _putchar(z + '0');
 }
 _putchar('\n');
 }
-}
+{
+return (0);
 }
 
