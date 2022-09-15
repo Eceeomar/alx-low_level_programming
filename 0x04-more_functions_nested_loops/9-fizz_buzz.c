@@ -1,35 +1,32 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
- * main -  checks for checks for a digit (0 through 9).
- * Return: Always 0.
+ * main - entry point
+ *
+ * Description: prints the numbers 1 - 100 w/
+ * Fizz for multiples of 3, Buzz for multiples of 5,
+ * and FizzBuzz for multiples of both
+ *
+ * Return: always 0
  */
 int main(void)
 {
-int x;
+int i;
 
-for (x = 1; x <= 100; x++)
+for (i = 1; i <= 100; i++)
 {
-if (x % 3 == 0 || x % 5 == 0)
-{
-if (x % 3 == 0)
-{
+if (i % 15 == 0)
+printf("FizzBuzz");
+else if (i % 3 == 0)
 printf("Fizz");
-}
-if (x % 5 == 0)
-{
+else if (i % 5 == 0)
 printf("Buzz");
-}
-}
 else
-{
-printf("%d", x);
+printf("%i", i);
+if (i < 100)
+printf(" ");
 }
-if (x != 100)
-{
-putchar(' ');
-}
-}
-putchar('\n');
-return (0);
+printf("\n");
+printf("\n");
 }
